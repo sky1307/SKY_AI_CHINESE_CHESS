@@ -1,0 +1,6 @@
+model_checkpoint_path: "best_policy_2000.model"
+all_model_checkpoint_paths: "best_policy_1600.model"
+all_model_checkpoint_paths: "best_policy_1700.model"
+all_model_checkpoint_paths: "best_policy_1800.model"
+all_model_checkpoint_paths: "best_policy_1900.model"
+all_model_checkpoint_paths: "best_policy_2000.model"

@@ -1,0 +1,8 @@
+PyQt5
+pygame
+numpy
+xlrd
+xlutils
+tensorflow==1.15.2
+h5py
+keras
