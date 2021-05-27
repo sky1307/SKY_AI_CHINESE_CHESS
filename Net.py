@@ -13,7 +13,7 @@ class Net():
         self.learn_rate = 2e-3
         self.lr_multiplier = 1.0  # adaptively adjust the learning rate based on KL
         self.temp = 1.0  # the temperature param
-        self.c_puct = 5
+        self.c_puct = 1
         self.epochs = 5  # num of train_steps for each update
         self.kl_targ = 0.02
         # Define the tensorflow neural network

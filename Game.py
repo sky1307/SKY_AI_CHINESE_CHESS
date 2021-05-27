@@ -2,9 +2,9 @@ from Net import Net
 from MCTS import MCTS
 from Board import Board
 
-net = Net('./best_policy_1000.model') #'./best_policy_4.model'
-# net = Net()
-count = 2000 # Số hiệp được huấn luyện
+# net = Net('./best_policy_1000.model') #'./best_policy_4.model'
+net = Net()
+count = 200 # Số hiệp được huấn luyện
 count_ai = 1
 board_move_data = []
 board_round = []
@@ -36,7 +36,9 @@ for n in range(1, count + 1):
     net_train_data = board.decode_data(mcts)
     net_train_data = net.get_equi_data(net_train_data)
     net.policy_update(net_train_data)
-    if count_ai%100 == 0:
+    if count_ai % 100 == 0:
+        print(count_ai)
+    if count_ai%1000 == 0:
         net.save_model('./best_policy_' + str(count_ai) + '.model')
         board.save_data(board_move_data, board_round, board_result, count_ai//100+1)
     count_ai += 1

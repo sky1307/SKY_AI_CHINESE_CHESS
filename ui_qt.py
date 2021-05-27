@@ -75,18 +75,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "sky ai chinese chess"))
-        self.label_3.setText(_translate("MainWindow", "Định dạng di động: xyx \'y \'\n "
-"xy là tọa độ trước khi di chuyển \n"
-"x là số dòng (0 bị bỏ qua) \n"
-"y là số cột (bị bỏ qua khi xy bằng 0) \n"
-"x\'y\' là tọa độ sau khi di chuyển \n"
-"x\'là 0 và không thể bị bỏ qua \n"
-"Chẳng hạn như 9484,122,10 \n"
-"Vui lòng đợi máy tính di chuyển sau khi nhập \n"
-"Nếu dữ liệu sai, quân cờ sẽ không di chuyển, \n"
-"Vui lòng nhập lại \n"))
         self.label_4.setText(_translate("MainWindow", "--------------\n" "Lượt của bạn\n" "bước tiếp theo"))
         self.pushButton.setText(_translate("MainWindow", "di chuyen"))
-        self.label_end.setText(_translate("MainWindow", "ing"))
+        # self.label_end.setText(_translate("MainWindow", "ing"))
 
 
